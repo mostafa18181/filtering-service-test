@@ -54,7 +54,7 @@ src/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/mostafa18181/filtering-service.git
+   git clone https://github.com/mostafa18181/filtering-service-test.git
    cd filtering-service
    ```
 

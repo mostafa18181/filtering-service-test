@@ -11,7 +11,7 @@ export class FilteringService {
 
   
   async addRectangles(main: any, inputs: any[], time: string): Promise<void> {
-    // حداقل کد: مستقیم بدون بررسی تداخل، یک مستطیل ذخیره می‌کنیم
+    // Minimal code: directly save a rectangle without checking for intersections
     const rectangle = new Rectangle();
     rectangle.x = inputs[0].x;
     rectangle.y = inputs[0].y;
