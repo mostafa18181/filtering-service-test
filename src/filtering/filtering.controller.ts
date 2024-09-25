@@ -6,12 +6,11 @@
 
 //   @Post()
 //   async addRectangles(@Body() body: any) {
-//     // حداقل کد برای فراخوانی متد سرویس
+//     // Minimal code to call the service method
 //     await this.filteringService.addRectangles(body.main, body.input, new Date().toISOString());
 //   }
 // }
 
-///////////////////////////////
 
 import { Controller, Post, Body, Get } from '@nestjs/common';
 import { FilteringService } from './filtering.service';
@@ -30,4 +29,3 @@ export class FilteringController {
         return this.filteringService.getRectangles();
     }
 }
-
