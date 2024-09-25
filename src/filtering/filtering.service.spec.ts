@@ -18,7 +18,7 @@ describe('FilteringService', () => {
       providers: [
         FilteringService,
         {
-          provide: getRepositoryToken(Rectangle), // شبیه‌سازی Repository
+          provide: getRepositoryToken(Rectangle),  // Mocking the Repository
           useValue: mockRepository,
         },
       ],
@@ -36,7 +36,7 @@ describe('FilteringService', () => {
   
     await service.addRectangles(main, inputs, time);
   
-    // حداقل کد باید فقط این فراخوانی را پاس کند
+    // The minimal code should only pass this call
     expect(mockRepository.save).toHaveBeenCalledTimes(1);
   });
   

@@ -23,7 +23,7 @@ describe('FilteringService', () => {
         {
           provide: FilteringService,
           useValue: {
-            addRectangles: jest.fn(), // شبیه‌سازی متد addRectangles
+            addRectangles: jest.fn(), // Mocking addRectangles method
           },
         },
       ],
